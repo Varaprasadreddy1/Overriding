@@ -1,0 +1,33 @@
+class Human {
+ //  overridden method
+ public void job() {
+   System.out.println("Working Professional");
+ }
+}
+ 
+class Teacher extends Human {
+ //  overriding method
+ public void job() {
+   System.out.println("Teacher");
+ }
+}
+ 
+class Doctor extends Human {
+ // overriding method
+ public void job() {
+   System.out.println("Doctor");
+ }
+}
+ 
+public class Main {
+public static void main(String[] args) {
+  Human h1 = new Human();
+  Teacher t1 = new Teacher();
+  Doctor d1 = new Doctor();
+  Human h2 = new Doctor();
+  h1.job();
+  t1.job();
+  d1.job();
+  h2.job();
+ }
+}
